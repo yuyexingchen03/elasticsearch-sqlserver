@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>elasticsearch的配置</comment>
+    <!-- 是否启用嗅探 -->
+    <entry key="client.transport.sniff">true</entry>
+    <!-- 集群名称 -->
+   <!--  <entry key="cluster.name">ESApplication</entry> -->
+     
+    <!-- http:9200 tcp:9300 逗号分隔多个节点地址 -->
+    <!-- <entry key="transport.addresses">127.0.0.1:9300</entry> -->
+    
+    <entry key="cluster.name">EsApplication</entry>
+    <entry key="transport.addresses">192.168.100.155:9201</entry>
+</properties>

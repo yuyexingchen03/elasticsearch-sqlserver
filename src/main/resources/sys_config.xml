@@ -1,0 +1,9 @@
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>间隔多长时间同步一次数据,单位h小时</comment>
+   	<!-- 间隔多长时间同步一次数据  -->
+    <entry key="how_long_syn">24</entry>
+    <!-- 触发器保存数据库操作记录的表  -->
+    <entry key="recordTableName">weiketi.dbo.sys_cud_option_record</entry>
+    
+</properties>
