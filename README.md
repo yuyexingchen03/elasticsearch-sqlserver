@@ -15,6 +15,8 @@
 注意jdbcUrl没有配置具体哪个数据库
 
 ## elasticsearch.xml配置ElasticSearch节点
+
+
 >     <!-- 是否启用嗅探 还可以配置其他一些配置 -->
 >     <entry key="client.transport.sniff">true</entry>
 >    <!-- 集群名称 -->
