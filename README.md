@@ -17,13 +17,16 @@
 ## elasticsearch.xml配置ElasticSearch节点
 
 
-    <!-- 是否启用嗅探 还可以配置其他一些配置 -->
+   
     <entry key="client.transport.sniff">true</entry>
-  <!-- 集群名称 -->
+  
   <entry key="cluster.name">EsApplication</entry>
-   <entry key="transport.addresses">192.168.100.155:9201</entry>
+   <entry key="transport.addresses">192.168.100.155:9300</entry>
 
 ------
+cluster.name : 集群名字
+transport.addresses : 节点列表,可以多个,逗号分隔
+client.transport.sniff : In order to enable sniffing
 client.transport.ignore_cluster_name :Set to true to ignore cluster name validation of connected nodes. (since 0.19.4)
 client.transport.ping_timeout : The time to wait for a ping response from a node. Defaults to 5s.
 client.transport.nodes_sampler_interval : How often to sample / ping the nodes listed and connected. Defaults to 5s.
