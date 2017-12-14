@@ -26,4 +26,8 @@
 
 ------
 
+## indexs.xml 索引配置
+> * <entry key="**索引名**">sql语句</entry>
+> * <entry key="**索引名**_docType">索引的文档类型名</entry>
+> * <entry key="**索引名**_docType_mapping">文档mapping配置明细</entry>
 
