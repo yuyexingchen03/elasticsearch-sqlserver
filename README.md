@@ -22,6 +22,7 @@
 >    <!-- 集群名称 -->
 >    <entry key="cluster.name">EsApplication</entry>
 >    <entry key="transport.addresses">192.168.100.155:9201</entry>
+>
 ==================
 其他一些参数
 参数 | 值和说明
