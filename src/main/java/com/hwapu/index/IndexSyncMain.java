@@ -233,7 +233,14 @@ public class IndexSyncMain {
 		LOGGER.info("新建索引,索引名["+indexName+"]");
 		try {
 			String mappingConfig = indexConfigMap.get(indexName+"_mapping");
+			if(mappingConfig == null) {
+				throw new Exception("索引mapping配置不能为空,请查看indexs.xml配置文件是否有相应的["+indexName+"_mapping配置");
+			}
+			
 			String indexDocType = indexConfigMap.get(indexName+"_docType");
+			if(indexDocType == null) {
+				throw new Exception("索引docType配置不能为空,请查看indexs.xml配置文件是否有相应的["+indexName+"_docType配置");
+			}
 			//XContentBuilder xContentBuilder = new x
 			ClientProvider.get().admin().indices().prepareCreate(indexName).addMapping(indexDocType, mappingConfig,XContentType.JSON).get();
 		} catch (Exception e) {
